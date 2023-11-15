@@ -15,138 +15,243 @@ background-color: #DBF9FC;
     gap:3em;
 }
 
-const comeback = document.getElementById("btn2");
-const yes = document.getElementById("btn1");
+.g1{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				position: relative;
+}
 
-//group 1 of btts
+.images1 img{
+				width: 150px;
+}
 
-const btt1 = document.getElementById('btt1');
-const btt2 = document.getElementById('btt2');
-const btt3 = document.getElementById('btt3');
-const btt4 = document.getElementById('btt4');
-const btt5 = document.getElementById('btt5');
-const btt6 = document.getElementById('btt6');
-const btt7 = document.getElementById('btt7');
-const btt8 = document.getElementById('btt8');
-const btt9 = document.getElementById('btt9');
-const btt10 = document.getElementById('btt10');
-const btt11 = document.getElementById('btt11');
-const btt12 = document.getElementById('btt12'); 
+.images1{
+				position: absolute;
+				top: 0;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap:2em;
+				margin-left: 1em;
+				margin-right: 1em;
+}
 
-//second group of btts
+.group1{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr ;
+				gap:2em;
+				margin-left: 1em;
+				margin-right: 1em;
+				z-index: 55;
+				margin-top: 2em;
+				opacity:;
+}
 
-const bbtt1 = document.getElementById('bbtt1');
-const bbtt2 = document.getElementById('bbtt2');
-const bbtt3 = document.getElementById('bbtt3');
-const bbtt4 = document.getElementById('bbtt4');
-const bbtt5 = document.getElementById('bbtt5');
-const bbtt6 = document.getElementById('bbtt6');
-const bbtt7 = document.getElementById('bbtt7');
-const bbtt8 = document.getElementById('bbtt8');
-const bbtt9 = document.getElementById('bbtt9');
-const bbtt10 = document.getElementById('bbtt10');
-const bbtt11 = document.getElementById('bbtt11');
-const bbtt12 = document.getElementById('bbtt12'); 
+.group1 button{
+				padding-left: 30px;
+				padding-right: 30px;
+				padding-top: 5px ;
+				padding-bottom:5px ;
+				font-weight: bold;
+				font-family: Poppins;
+	    z-index: 4444;
+	    border: 2px solid red;
+}
+.group1 button:hover{
+				background: white;
+				border: 2px solid black;
+}
 
-
-//IMAGESSSSSS///////
-
-const hands = document.getElementById('hands');
-const sadcat = document.getElementById('sadcat');
-const crying = document.getElementById('crying');
-const sadboi = document.getElementById('sadboi');
-const sadman  = document.getElementById('sadman');
-const hahahuhu = document.getElementById('hahahuhu');
-const hang = document.getElementById('hang');
-const sadsad = document.getElementById('sadsad');
-
-
-
-comeback.addEventListener("click", function (){
-			btt12.style.opacity= "1";
-			comeback.style.opacity= "0";
-									
-});
-
-btt12.addEventListener("click", function (){
-			btt12.style.opacity= "0";
-			bbtt3.style.opacity= "1";
-			hands.style.opacity= "1";
-									
-});
-
-bbtt3.addEventListener("click", function (){
-			btt1.style.opacity= "1";
-			bbtt3.style.opacity= "0";
-			sadcat.style.opacity= "1";
-									
-});
-
-btt1.addEventListener("click", function (){
-			btt1.style.opacity= "0";
-			btt4.style.opacity= "1";
-			hahahuhu.style.opacity= "1";
-									
-});
-
-btt4.addEventListener("click", function (){
-			btt2.style.opacity= "1";
-			btt4.style.opacity= "0";
-			sadboi.style.opacity= "1";					
-});
-
-btt2.addEventListener("click", function (){
-			btt2.style.opacity= "0";
-			bbtt1.style.opacity= "1";
-			crying.style.opacity= "1";				
-			yes.style.padding= "50px";
+.ask{
 				
-});
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				border-radius: 5px;
+			z-index: 5555555;
+				padding-top: 1em;
+				padding-bottom: 1em;
+				text-align: center;
+				margin-top: em;
+			position: relative;											
+										
+}
 
-bbtt1.addEventListener("click", function (){
-			bbtt8.style.opacity= "1";
-			bbtt1.style.opacity= "0";
-			sadman.style.opacity= "1";					
-});
+.btn{
+				display: flex;
+				justify-content:center;
+				align-items: center;
+				gap: 2em;				
+}
 
-bbtt8.addEventListener("click", function (){
-			bbtt8.style.opacity= "0";
-			btt6.style.opacity= "1";
-			hang.style.opacity= "1";			
-			
-					
-			
-});
+#btn1{
+				padding-left: 30px;
+				padding-right: 30px;
+				padding-top: 5px ;
+				padding-bottom:5px ;
+				font-weight: bold;
+				font-family: Poppins;
+				border: 2px solid black;
+}
+#btn1:hover{
+				background: white;
+				border: 2px solid black;
+}
+#btn2:hover{
+				background: white;
+				border: 2px solid black;
+}
+#btn2{
+				padding-left: 30px;
+				padding-right: 30px;
+				padding-top: 5px ;
+				padding-bottom:5px ;
+				font-weight: bold;
+				font-family: Poppins;
+				border: 2px solid red;
+				
+	
+}
 
-btt6.addEventListener("click", function (){
-			bbtt6.style.opacity= "0";
-			btt4.style.opacity= "0";	 
-		 btt3.style.opacity= "1";
-							
-});
+.crush{
+				font-size: 25px;
+				margin-bottom: 2em;
+				font-weight: bold;
+				color: white;
+}
+#hands{
+				width: 50px;
+				position: absolute;
+				top: 9em;
+				left: 1em;
+				animation: bounce2 2s ease infinite;
+				opacity: 0;
+}
+#sadman{
+				transform: translateY(-2em);		
+				opacity: 0;
+}
+#hang{
+		transform: translateY(-4em);		
+		opacity: 0;
+}
+#frog{
+				transform: translateY(-4em);	
+				opacity: 0;	
+}
 
-btt3.addEventListener("click", function (){
-			bbtt6.style.opacity= "1";
-			btt1.style.opacity= "1";
-			btt4.style.opacity= "1";	 
-		 btt3.style.opacity= "1";
-		 btt2.style.opacity= "1";
-		 btt5.style.opacity= "1";
-		 btt6.style.opacity= "1";
-		 btt9.style.opacity= "1";
-		 btt11.style.opacity= "1";
-		 btt10.style.opacity= "1";
-		 bbtt1.style.opacity= "1";
-		 bbtt2.style.opacity= "1";
-		 bbtt3.style.opacity= "1";
-		 bbtt4.style.opacity= "1";
-		 bbtt5.style.opacity= "1";
-		 
-		 bbtt7.style.opacity= "1";
-		 
-		 bbtt9.style.opacity= "1";
-		 
-		 
-							
-});
+#hahahuhu{
+				opacity: 0;
+}
+
+#sadcat{
+				opacity: 0;
+}
+#sadboi{
+				opacity: 0;
+}
+
+#crying{
+				opacity: 0;
+}
+#sadsad{
+				opacity: 0;
+}
+
+
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-20px);}
+	60% {transform: translateY(-15px);}
+}
+
+/*BUTTONS OPACITY*/
+
+#btt1{
+				opacity: 0;
+}
+#btt2{
+				opacity: 0;
+}
+#btt3{
+				opacity: 0;
+}
+#btt4{
+				opacity: 0;
+}
+#btt5{
+				opacity: 0;
+}
+#btt6{
+				opacity: 0;
+}
+#btt7{
+				opacity: 0;
+}
+#btt8{
+				opacity: 0;
+}
+#btt9{
+				opacity: 0;
+}
+#btt10{
+				opacity: 0;
+}
+#btt11{
+				opacity: 0;
+}
+#btt12{
+				opacity: 0;
+}
+
+       /*BUTTONS2 OPACITY*/
+#bbtt1{
+				opacity: 0;
+}
+#bbtt2{
+				opacity: 0;
+}
+#bbtt3{
+				opacity: 0;
+}
+#bbtt4{
+				opacity: 0;
+}
+#bbtt5{
+				opacity: 0;
+}
+#bbtt6{
+				opacity: 0;
+}
+#bbtt7{
+				opacity: 0;
+}
+#bbtt8{
+				opacity: 0;
+}
+#bbtt9{
+				opacity: 0;
+}
+#bbtt10{
+				opacity: 0;
+}
+#bbtt11{
+				opacity: 0;
+}
+#bbtt12{
+				opacity: 0;
+}
+
+.fff{
+display: flex;
+				justify-content: center;
+				align-items: center;
+}
+
+.sadcat{
+	width: 320px;
+	height: 240px;
+}
 
