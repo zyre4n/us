@@ -134,11 +134,3 @@ btt3.addEventListener("click", function (){
 		 
 							
 });
-
-
-
-
-
-
-
-
