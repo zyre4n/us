@@ -2,7 +2,7 @@
 
 const comeback = document.getElementById("btn2");
 const yes = document.getElementById("btn1");
-audioElement.play();
+
 
 //group 1 of btts
 
