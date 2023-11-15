@@ -1,6 +1,6 @@
 
 
-
+audioElement.play();
 const comeback = document.getElementById("btn2");
 const yes = document.getElementById("btn1");
 
